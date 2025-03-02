@@ -1,6 +1,6 @@
 "use client";
 
-import ValidateForm from "./components/ValidationForm";
+import ValidateForm from "./components/ValidateForm";
 import { withApollo } from "./services/gql-client";
 
 const Home = () => <ValidateForm />;

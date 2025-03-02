@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:server": "jest --selectProjects server"
+    "test:server": "jest --selectProjects server",
+    "test:client": "jest --selectProjects client"
   },
   "dependencies": {
     "@apollo/client": "^3.13.1",
