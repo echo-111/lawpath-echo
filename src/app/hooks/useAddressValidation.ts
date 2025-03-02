@@ -65,7 +65,7 @@ export function useAddressValidation() {
       }
 
       setSuccess("The postcode, suburb, and state input are valid.");
-    } catch (err) {
+    } catch {
       setError("Failed to validate address.");
     }
   };

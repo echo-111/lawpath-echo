@@ -1,5 +1,5 @@
 export class AddressApiError extends Error {
-  public response: any;
+  public response: unknown;
   public status: number;
 
   constructor(status: number, message: string) {

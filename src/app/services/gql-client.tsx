@@ -5,8 +5,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export function withApollo(PageComponent: any) {
-  const WithApollo = (props: any) => (
+export function withApollo<T extends Record<string, unknown>>(PageComponent: React.ComponentType<T>) {
+  const WithApollo = (props: T) => (
     <ApolloProvider client={client}>
       <PageComponent {...props} />
     </ApolloProvider>

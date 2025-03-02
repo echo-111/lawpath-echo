@@ -5,7 +5,7 @@ interface Address {
   state: string;
 }
 
-export const addressResolver = async (parent: any, args: Address) => {
+export const addressResolver = async (_parent: unknown, args: Address) => {
   const { q, state = '' } = args;
   const localities = await getAddress(q, state);
   return localities;

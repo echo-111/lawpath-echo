@@ -3,6 +3,6 @@
 import ValidateForm from "./components/ValidateForm";
 import { withApollo } from "./services/gql-client";
 
-const Home = () => <ValidateForm />;
+const Home: React.FC= () => <ValidateForm />;
 
 export default withApollo(Home);
